@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>『庄园』| 欢迎访问庄园，祝您生活愉快。</titl>
+<title>『庄园』| 欢迎访问庄园</title>
 <style>
   * {
     margin: 0;
@@ -12,6 +12,7 @@
   }
   html, body {
     height: 100%;
+    /* 背景色微调，更柔和 */
     background: #b8c2cc;
     font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
   }
@@ -20,9 +21,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* --- 顶部椭圆条 --- */
   .top-oval {
     width: 60%;
     height: 24px;
+    /* 渐变背景，更有质感 */
     background: linear-gradient(135deg, #d9e1e8, #c5ccd6);
     border-radius: 12px;
     margin: 8px auto;
@@ -31,8 +35,11 @@
     justify-content: center;
     color: #4a5568;
     font-size: 12px;
+    /* 轻微投影 */
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   }
+
+  /* --- 浅灰色区域 --- */
   .light-bg {
     background: #c4c9d1;
     padding: 35px 0 45px;
@@ -41,11 +48,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* --- 庄园介绍框 (加宽 + 精致化) --- */
   .title-card {
     background: linear-gradient(145deg, #e0ecf5, #d0dfe8);
     width: 75%; /* 加宽 */
     padding: 28px 35px;
-    border-radius: 14px;
+    border-radius: 14px; /* 大圆角更现代 */
     text-align: center;
     color: #2d3748;
     /* 精致阴影 */
@@ -53,14 +62,17 @@
   }
 
   .manor-title {
-    font-size: 26px; 
+    font-size: 26px; /* 标题稍大 */
     font-weight: 600;
     margin-bottom: 16px;
     letter-spacing: 1px;
   }
+
+  /* --- 分割线 (深一点、细一点) --- */
   .divider {
     width: 80%;
     height: 1px;
+    /* 深灰色，低调但有存在感 */
     background: #8a9aa8;
     margin: 0 auto 16px;
   }
@@ -70,6 +82,8 @@
     line-height: 1.7;
     color: #3c4452;
   }
+
+  /* --- 搜索框 (精致化) --- */
   .search-bar {
     position: absolute;
     left: 50%;
@@ -78,18 +92,22 @@
     width: 42%;
     height: 28px;
     background: #ffffff;
-    border-radius: 14px; 
+    border-radius: 14px; /* 大圆角 */
     display: flex;
     align-items: center;
     padding: 0 20px;
+    /* 精致阴影 */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #e8e8e8;
   }
+  /* 去掉了伪元素，只剩占位文字 */
   .search-bar::after {
     content: "搜索庄园内容...";
     font-size: 12px;
     color: #b0b0b0;
   }
+
+  /* --- 深灰色区域 --- */
   .dark-bg {
     background: #4a5568;
     flex-grow: 1;
@@ -98,6 +116,8 @@
     justify-content: center;
     align-items: flex-start;
   }
+
+  /* --- 内容框 --- */
   .content-card {
     background: linear-gradient(145deg, #c4d2dc, #b8c5cf);
     width: 92%;
@@ -109,6 +129,8 @@
     line-height: 1.7;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
+
+  /* --- 底部椭圆 --- */
   .bottom-oval {
     width: 60%;
     height: 24px;
@@ -135,7 +157,7 @@
       <div class="divider"></div>
       <div class="manor-desc">
         您好<br>
-        没写完你看什么
+        看什么呢，还没做好
       </div>
     </div>
     <div class="search-bar"></div>
@@ -143,8 +165,8 @@
 
   <div class="dark-bg">
     <div class="content-card">
-      标题标题<br><br>
-      内容内容<br>
+      标题<br><br>
+     内容
     </div>
   </div>
 
